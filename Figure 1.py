@@ -7,7 +7,7 @@ factors for standard Cold Dark Matter (w=0) and the proposed T-field gradient
 component (w=-1/3) from the paper "Quantum Time as a Scalar Field".
 
 Author: Tiziano Demaria
-Date: [Current Date]
+Date: 11 september 2025
 License: MIT
 """
 import numpy as np
