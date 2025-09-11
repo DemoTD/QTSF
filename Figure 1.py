@@ -1,3 +1,15 @@
+"""
+Numerical Solution for Structure Growth with Different Equations of State
+
+This code numerically integrates the differential equation for the growth of density
+perturbations in a universe with matter and dark energy. It compares the growth
+factors for standard Cold Dark Matter (w=0) and the proposed T-field gradient
+component (w=-1/3) from the paper "Quantum Time as a Scalar Field".
+
+Author: Tiziano Demaria
+Date: [Current Date]
+License: MIT
+"""
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.integrate import odeint
