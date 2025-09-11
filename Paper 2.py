@@ -9,7 +9,7 @@ The relationship is derived from the equation in Appendix A1 of the paper:
 δ_∇T ≈ 0.19 / f
 
 Author: Tiziano Demaria
-Date: [Current Date]
+Date: 11 september 2025
 """
 
 import matplotlib.pyplot as plt
