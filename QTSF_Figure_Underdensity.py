@@ -10,6 +10,7 @@ The relationship is derived from the equation in Appendix A1 of the paper:
 
 Author: Tiziano Demaria
 Date: 11 september 2025
+Lincense: MIT
 """
 
 import matplotlib.pyplot as plt
