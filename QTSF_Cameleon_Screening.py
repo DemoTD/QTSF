@@ -3,6 +3,8 @@ Cameleon Screening Simulation
 Converted from MATLAB/Octave -> Python (numpy + matplotlib)
 
 Author: Tiziano Demaria
+Date: 19 september 2025
+License: MIT
 """
 import numpy as np
 import matplotlib.pyplot as plt
