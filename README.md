@@ -3,8 +3,9 @@
 This repository contains Python code to numerically integrate the differential equation for the growth of density perturbations in an expanding universe, comparing different equations of state.
 
 ## Overview
+The code is simulating the equations included into the document.
 
-The code solves the linear growth equation for cosmological perturbations:
+In the exmaple here, the code solves the linear growth equation for cosmological perturbations:
 
 d²δ/da² + [d(lnH)/da + 3/a] dδ/da - [3/2 Ω_m(a) (1-w)(1+3w)/(a⁵ H(a)²/H₀²)] δ = 0
 
@@ -23,6 +24,7 @@ Install requirements with:
 ```bash
 pip install numpy scipy matplotlib
 python growth_integration.py
-
+```
 License
 MIT License - feel free to use this code for research or educational purposes.
+
