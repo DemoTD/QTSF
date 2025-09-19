@@ -1,7 +1,9 @@
-# ----------------------------------
-# MathLab to adapted Python' script
-# Cameleon Screening
-# ----------------------------------
+"""
+Cameleon Screening Simulation
+Converted from MATLAB/Octave -> Python (numpy + matplotlib)
+
+Author: Tiziano Demaria
+"""
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.cm import get_cmap
