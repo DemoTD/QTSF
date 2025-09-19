@@ -23,7 +23,7 @@ It specifically compares:
 Install requirements with:
 ```bash
 pip install numpy scipy matplotlib
-python growth_integration.py
+python QTSF_Figure_Growth_w.py
 ```
 License
 MIT License - feel free to use this code for research or educational purposes.
