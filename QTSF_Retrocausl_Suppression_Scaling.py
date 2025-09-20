@@ -75,8 +75,11 @@ if classical_start > 0:
 
     # Vertical line at transition
     axes[1].plot([quantum_cutoff, quantum_cutoff], [1e-20, 1], 'k--', linewidth=1.5)
-    axes[1].text(quantum_cutoff+0.2, beta_retro/50, 'Quantum-Classical Transition',
-                 fontsize=9, rotation=90)
+    axes[1].annotate('Quantum-Classical Transition',
+                 xy=(quantum_cutoff, beta_suppressed[classical_start]),
+                 xytext=(quantum_cutoff+1, beta_retro/2),
+                 arrowprops=dict(arrowstyle='->', color='black'),
+                 fontsize=9)
 
 # -------------------------------------------------
 # Save as high-resolution PNG
