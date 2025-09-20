@@ -40,7 +40,7 @@ meso_N = 1e3
 axes[0].plot(micro_N, np.exp(-gamma_fixed * time_fixed * micro_N), 'ko', markersize=10, markerfacecolor='k')
 axes[0].plot(meso_N, np.exp(-gamma_fixed * time_fixed * meso_N), 'ko', markersize=10, markerfacecolor='k')
 
-axes[0].text(micro_N*1.5, 1e-1, 'Microscopic', fontsize=10, fontweight='bold')
+axes[0].text(micro_N*1.5, 1e-20, 'Microscopic', fontsize=10, fontweight='bold')
 axes[0].text(meso_N*0.8, 1e-10, 'Mesoscopic', fontsize=10, fontweight='bold')
 
 # -------------------------------------------------
@@ -67,11 +67,20 @@ if classical_start > 0:
     axes[1].fill_between([S_range[classical_start], S_range[-1]],
                          1e-20, 1, color=[1, 0.9, 0.8], alpha=0.3)
 
-    # Labels
-    axes[1].text(np.mean(S_range[:classical_start]), beta_retro/5, 'Quantum Regime',
-                 fontsize=11, fontweight='bold', ha='center')
-    axes[1].text(np.mean(S_range[classical_start:]), beta_retro/500, 'Classical Regime',
-                 fontsize=11, fontweight='bold', ha='center')
+    # Quantum Regime label
+    axes[1].annotate('Quantum Regime',
+                    xy=(np.mean(S_range[:classical_start]), beta_suppressed[:classical_start].max()),
+                    xytext=(np.mean(S_range[:classical_start]), beta_suppressed[:classical_start].max()*2),
+                    ha='center', fontsize=11, fontweight='bold',
+                    arrowprops=dict(arrowstyle='->', color='black', lw=1))
+
+    # Classical Regime label
+    axes[1].annotate('Classical Regime',
+                    xy=(np.mean(S_range[classical_start:]), beta_suppressed[classical_start:].max()),
+                    xytext=(np.mean(S_range[classical_start:]), beta_suppressed[classical_start:].max()*2),
+                    ha='center', fontsize=11, fontweight='bold',
+                    arrowprops=dict(arrowstyle='->', color='black', lw=1))
+
 
     # Vertical line at transition
     axes[1].plot([quantum_cutoff, quantum_cutoff], [1e-20, 1], 'k--', linewidth=1.5)
