@@ -7,6 +7,7 @@ The code is simulating the equations included into the document.
 
 In the exmaple here, the code solves the linear growth equation for cosmological perturbations:
 
+$\frac{d^2}{da^2}$
 d²δ/da² + [d(lnH)/da + 3/a] dδ/da - [3/2 Ω_m(a) (1-w)(1+3w)/(a⁵ H(a)²/H₀²)] δ = 0
 
 It specifically compares:
