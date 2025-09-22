@@ -11,7 +11,7 @@ $\frac{d^2\delta}{da^2} + \bigl[\frac{d(ln H)}{da} + \frac{3}{a}\bigr]\frac{d\de
 
 It specifically compares:
 1. Standard Cold Dark Matter (CDM) with equation of state parameter w = 0
-2. The proposed T-field gradient component with w = -1/3 from the paper "Quantum Time as a Scalar Field"
+2. The proposed T-field gradient component with $w =-\frac{1}{3}$ from the paper "Quantum Time as a Scalar Field (QTSF)"
 
 ## Requirements
 
